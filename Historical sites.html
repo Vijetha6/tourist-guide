@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical sites</title>
+</head>
+<body>
+    <div class="places">
+        <h3 align="center">Historical sites</h3>
+        <p>Karnataka is home to several historical sites, including Hampi, Badami, and Pattadakal, which are UNESCO World Heritage Sites.</p>
+        <h4 align="center">HAMPI</h4>
+        <p>Hampi or Hampe is the town in the Vijayanagara district in the Indian state of Karnataka.Located along the Tungabhadra River in the east and center part of the state, Hampi is near the city of Hospet. It is famous for hosting the Hampi Group of Monuments with the Virupaksha Temple, a UNESCO World Heritage Site.The town was possibly known as Kishkindha in the Ramayana age.</p>
+        <div id="hampi" class="wiki-box"></div>
+        <img src="https://templeinkarnataka.com/wp-content/uploads/2024/08/Vitthala-Temple-Hampi1.jpg" alt="Vijaya Vithala Temple">
+        <p><b>Vijaya Vithala Temple</b></p>
+        <p>Considered the most magnificent of Hampi’s temples and monuments, the Vittala Temple showcases the exceptional creativity and architectural skill of the Vijayanagara artisans. Built in the Dravidian architectural style, it features the elaborate and artistic carvings typical of South Indian temple design, making it unparalleled in Hampi.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg/1200px-Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg" alt="Virupaksha Temple" width="600">
+        <p><b>Virupaksha Temple</b></p>
+        <p>The complex of the Virupaksha Temple in Hampi is a significant architectural marvel and a pivotal site in the region's rich cultural heritage. This temple is dedicated to Lord Shiva and is one of the oldest functioning temples in India, dating back to the 7th century. The intricate carvings, towering Gopurams, and grand entranceways showcase the remarkable skill of artisans from the Vijayanagara Empire. The complex also features a large courtyard surrounded by various shrines, mandapas, and sacred water tanks, adding to its spiritual ambiance. As a UNESCO World Heritage Site, the Virupaksha Temple complex draws countless visitors and devotees, offering a glimpse into the religious and artistic traditions of ancient India.</p>
+    </div>
+    <div class="places">
+        <h4>Mysore</h4>
+        <p>Mysore, also known as the cultural capital of Karnataka, is famous for its majestic palaces, gardens, and rich history. The Mysore Palace, with its Indo-Saracenic architecture, attracts millions of tourists every year. The city also celebrates the grand Dasara festival with royal processions, music, and dance, reflecting its vibrant traditions.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg" alt="Mysore Palace" width="600">
+        <p><b>Mysore palace</b></p>
+        <p>Mysore Palace, also known as Amba Vilas Palace, is one of the most magnificent royal buildings in India, showcasing Indo-Saracenic style with domes, arches, and stunning interiors.</p>
+        <img src="https://imgmediagumlet.lbb.in/media/2022/09/632dd84e0caf612811b1ec39_1663948878993.jpg" alt="mysore during dasara" width="600">
+        <p><b>Mysore during dasara</b></p>
+        <p>The palace is beautifully illuminated with thousands of lights every evening during the Dussehra festival, attracting visitors from all over the world.</p>
+        <p>The interiors feature richly decorated halls with stained glass ceilings, ornate mirrors, and royal paintings.</p>
+        <div id="mysore-palace" class="wiki-box"></div>
+        <img src="https://catholicshrinebasilica.com/wp-content/uploads/St.-Philomenas-Cathedral-Mysore.webp" alt="St. Philomena's Church" width="600">
+        <p><b>St. Philomena's Church</b></p>
+        <p>The church is dedicated to 3rd century saint Philomena who was the daughter of the monarch of a small state in Greece. Her parents were childless for several years. They prayed Jesus to bless them with a child and the next year Philomena was born to them. Even in her childhood Philomena showed signs of piety. When Philomena was 13 years old her father took her to Rome to obtain the favour of Emperor Diocletian. The Emperor was enthralled by her beauty and wanted to marry her. But she refused and vowed to give herself to God. She was tortured and beheaded in Rome. But people’s devotion for her spread near and far and she was given sainthood.</p>
+    </div>
+    <div class="places">
+        <h4><b>Badami</b></h4>
+        <p>Badami is a historic town known for its ancient cave temples carved into rugged sandstone cliffs. It served as the capital of the Chalukya dynasty in the 6th century and is famous for its rock-cut architecture, sculptures, and inscriptions. Surrounded by beautiful hills and the Agastya Lake, Badami offers a perfect blend of history and natural beauty.</p>
+        <img src="https://turuhi.com/storage/story/1-Badami-Caves.jpg" alt="Badami Cave Temples" width="600">
+        <p><b>Badami cave temple</b></p>
+        <p>Badami, formerly known as Vatapi, is famous for its rock-cut cave temples carved into cliffs during the Chalukya dynasty. The town is known for its historical, architectural, and archaeological significance.</p>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/35/d6/bhuthanatha-temple.jpg?w=1600&h=900&s=1" alt="Bhuthanatha Temple" width="600">
+        <p><b>Bhuthanatha Temple</b></p>
+        <p>Bhuthanatha Temple, set against the Agastya lake, is another famous attraction of Badami known for its peaceful ambiance and reflection on the water.</p>
+        <img src="https://hikerwolf.com/wp-content/uploads/2020/09/badami_cave_temple1.jpg" alt="Badami Fort" width="600">
+        <p><b>Badami Fort</b></p>
+        <p>The Badami Fort on the hill above the caves offers panoramic views and insight into the town’s military history.</p>
+        <div id="badami" class="wiki-box"></div>
+        <div id="gol-gumbaz" class="wiki-box"></div>
+    </div> 
+    <script>
+  const places = [
+    { id: "hampi", title: "Hampi" },
+    { id: "mysore-palace", title: "Mysore_Palace" },
+    { id: "badami", title: "Badami" },
+    { id: "gol-gumbaz", title: "Gol_Gumbaz" }
+  ];
+
+  places.forEach(place => {
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${place.title}`)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById(place.id).innerHTML = `
+          <h3>${data.title}</h3>
+          <p>${data.extract}</p>
+          ${data.thumbnail ? `<img src="${data.thumbnail.source}" width="200">` : ''}
+          <p><a href="${data.content_urls.desktop.page}" target="_blank">Read more</a></p>
+          <hr>
+        `;
+      })
+      .catch(err => {
+        document.getElementById(place.id).innerText = "Couldn't load info from Wikipedia.";
+        console.error(err);
+      });
+  });
+</script>
+
+</body>
+</html>

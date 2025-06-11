@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism Guide</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Check if user is logged in when page loads
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (!username) {
+                // If no username found, redirect to login page
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>India Tourism</span>
+        </div>
+        <div class="theme-toggle">
+            <button onclick="toggleDarkMode()" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <div class="container">
+            <h1>Welcome to India</h1>
+            <h2>Discover the Beauty of Incredible India</h2>
+            <p>Explore diverse cultures, ancient heritage, and breathtaking landscapes across different states of India.</p>
+            <a href="places.html" class="cta-button">
+                Start Exploring <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <i class="fas fa-landmark"></i>
+            <h3>Historical Sites</h3>
+            <p>Discover ancient monuments and rich heritage</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-tree"></i>
+            <h3>Wildlife</h3>
+            <p>Experience diverse flora and fauna</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-umbrella-beach"></i>
+            <h3>Beaches</h3>
+            <p>Relax at beautiful coastal destinations</p>
+        </div>
+    </div>
+
+    <script src="places.js"></script>
+</body>
+</html>
